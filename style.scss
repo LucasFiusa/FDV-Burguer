@@ -34,7 +34,7 @@ a{
 
 .btn-default:hover{
     background-color: #3d3d3d;
-    color: #ffe7d3;
+    color: #f37c0c;
 }
 
 // HEADER
@@ -43,7 +43,7 @@ a{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #644141;
+    background-color: #f37c0c;
     border-bottom: solid 2px #3d3d3d;
 }
 
@@ -115,23 +115,26 @@ a{
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    border-radius: 25px;
 
     img{
-        width: 100%;
+        width: 110%;
     }
 }
 
 .overlay{
-    width: 100%;
+    width: 94%;
     position: absolute;
-    top: 0; left: 0;
+    // top: 0; left: 0;
     background-color: rgba(43, 42, 42, 0.836);
     height: 100%;
-    border-radius: 60px;
+    // border-radius: 50px;
     display: flex;
     justify-content: center;
+    border-radius: 45px;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #ffe7d3;
     font-weight: 600;
     letter-spacing: 4px;
@@ -153,7 +156,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background-color: #644141;
+    background-color: #f37c0c;
     border-top: 2px solid #3d3d3d;
     color: #fff;
 
@@ -223,7 +226,7 @@ footer{
 }
 
 .social-midia-btn i:hover{
-    color: #fff;
+    color: #f37c0c;
 }
 
 // RESPONSIVO
@@ -237,7 +240,11 @@ footer{
     .images-content{
         width: calc(50% - 10%);
     }
-
+    .overlay{
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 20px;
+    }
     footer{
         flex-direction: row;
         justify-content: center;
